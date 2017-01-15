@@ -1,0 +1,56 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+#f1DriverHeading {
+    background-color: #999999;   
+    margin-left: 10px;
+    margin-right: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    color: #FFFFFF
+}
+#listId {
+
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% - 20px); // 20 = right margin + left margin
+
+
+}
+
+table, th , td  {
+  border: 1px solid grey;
+  border-collapse: collapse;
+    padding: 5px;
+    
+}
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
